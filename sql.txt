@@ -1,0 +1,11 @@
+CREATE DATABASE students;
+USE students;
+
+CREATE table users(
+idUsers SMALLINT primary key,
+username VARCHAR(10),
+password VARCHAR(255),
+group SMALLINT
+);
+
+grant all on students.*to 'students'@'localhost' IDENTIFIED BY 'stdpass';
